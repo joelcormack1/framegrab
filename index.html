@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Frame Grab System — AI imagery for commercial treatments</title>
+<meta name="description" content="A complete prompting system for treatment imagery that reads like frames grabbed from the finished :30. Built by a working commercial treatment designer.">
+<meta property="og:title" content="The Frame Grab System">
+<meta property="og:description" content="Your treatment boards shouldn't look like AI.">
+<meta property="og:image" content="assets/og.jpg">
+<style>
+  :root{--ink:#141414;--soft:#5a5a56;--line:#e3e0da;--paper:#faf9f6;--accent:#1f3d8c;--wash:#f1efe9}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.65 Georgia,'Times New Roman',serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  .narrow{max-width:680px}
+  .kicker{font:600 11px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:16px}
+  h1,h2,h3{font-weight:400;letter-spacing:-.01em;margin:0}
+  header{padding:100px 0 70px}
+  h1{font-size:clamp(40px,6.5vw,64px);line-height:1.05;margin-bottom:24px;max-width:12em}
+  .sub{font-size:20px;line-height:1.55;color:var(--soft);max-width:33em}
+  .cta{display:inline-block;margin-top:36px;background:var(--ink);color:#faf9f6;text-decoration:none;font:600 14px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.04em;padding:18px 30px;border-radius:2px}
+  .cta:hover{background:var(--accent)}
+  .cta-note{font:12px/1.6 'Helvetica Neue',Arial,sans-serif;color:var(--soft);margin-top:12px}
+  .filmstrip{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;padding:10px;background:var(--ink);border-radius:3px}
+  .filmstrip img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;border-radius:1px}
+  section{border-top:1px solid var(--line);padding:70px 0}
+  h2{font-size:clamp(28px,4vw,38px);margin-bottom:10px}
+  .lede{font-size:19px;color:var(--soft);margin:8px 0 34px;max-width:34em}
+  p{margin:0 0 16px;max-width:38em}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:30px 0 8px}
+  .half .tag{font:600 10px/1 'Helvetica Neue',Arial,sans-serif;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+  .half .tag.b{color:#a04b3f}.half .tag.a{color:var(--accent)}
+  .half img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;border-radius:2px}
+  .half .cap{font-size:13.5px;color:var(--soft);margin-top:10px;line-height:1.55}
+  .get{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line)}
+  .get div{border-bottom:1px solid var(--line);padding:26px 26px 26px 0}
+  .get b{display:block;font-size:18px;font-weight:400;margin-bottom:6px}
+  .get span{font-size:15px;color:var(--soft);line-height:1.6}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+  .grid figure{margin:0}
+  .grid img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block;border-radius:2px}
+  .grid figcaption{font:11px/1.5 'Helvetica Neue',Arial,sans-serif;letter-spacing:.05em;color:var(--soft);margin-top:8px;text-transform:uppercase}
+  .rule-card{background:var(--wash);border-left:3px solid var(--accent);padding:18px 22px;margin:26px 0;font-size:18px;font-style:italic;max-width:34em}
+  .price{text-align:center;padding:90px 0}
+  .price .amount{font-size:64px;margin:10px 0 4px}
+  .price .strike{color:var(--soft);text-decoration:line-through;font-size:20px;margin-right:10px}
+  footer{border-top:1px solid var(--line);padding:30px 0 60px;font:12px/1.7 'Helvetica Neue',Arial,sans-serif;color:var(--soft)}
+  @media(max-width:700px){.pair{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,1fr)}.get{grid-template-columns:1fr}.filmstrip{grid-template-columns:repeat(2,1fr)}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">The Frame Grab System</div>
+    <h1>Your treatment boards shouldn't look like AI.</h1>
+    <p class="sub">A complete prompting system for commercial treatment imagery that reads like frames grabbed from the finished :30. Motion-picture cameras and stocks, one motivated light source, casts that behave like people mid-take, one believable imperfection per frame.</p>
+    <a class="cta" id="buy" href="#pricing">Get the system — $39</a>
+    <div class="cta-note">Instant download. Works with any text model and any image model. No subscriptions.</div>
+  </header>
+
+  <div class="filmstrip">
+    <img src="assets/hero-the-pour.jpg" alt="Whiskey pour frame">
+    <img src="assets/hero-before-the-whistle.jpg" alt="Sprinter in the blocks frame">
+    <img src="assets/hero-last-stop.jpg" alt="Night gas station frame">
+  </div>
+  <p class="cta-note" style="margin-top:10px">Every image on this page was generated with prompts from the system, exactly as they ship. No retouching.</p>
+
+  <section>
+    <div class="wrap narrow" style="padding:0">
+      <div class="kicker">The Problem</div>
+      <h2>Agencies can smell it instantly.</h2>
+      <p class="lede">You generate imagery for a deck and it comes back glossy, symmetrical, over-smiled, and dead.</p>
+      <p>Perfect teeth on everyone. A flattering key on every face. A cast lineup grinning at the camera. Boards like that don't just look cheap next to real reference, they quietly tell the agency the director didn't care enough to fix it.</p>
+      <p>The fix isn't a better model or a magic keyword. It's cinematography. A real frame from a real commercial obeys physics: one dominant light source, one focus plane, one story beat, a cast that doesn't know where the camera is. This system encodes those rules so the model has no room to drift back to stock.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">Proof</div>
+    <h2>Same beat. Same image model.<br>Different prompt.</h2>
+    <p class="lede">The only variable below is the system.</p>
+
+    <div class="pair">
+      <div class="half">
+        <div class="tag b">Before — how most people prompt</div>
+        <img src="assets/before-family-dinner.jpg" alt="Generic AI family dinner">
+        <div class="cap">"A happy family laughs together around a dinner table at golden hour, warm cozy lighting, beautiful cinematic photo, hyperrealistic, 8k."</div>
+      </div>
+      <div class="half">
+        <div class="tag a">After — through the system</div>
+        <img src="assets/after-family-dinner.jpg" alt="Frame-grab style family dinner">
+        <div class="cap">One story beat, two chromatic anchors, broken window sun, a cropped foreground shoulder, focus held on the dish mid-pass. Prompt 03 of the starter bank, verbatim.</div>
+      </div>
+    </div>
+
+    <div class="pair">
+      <div class="half">
+        <div class="tag b">Before</div>
+        <img src="assets/before-product-shot.jpg" alt="Generic AI sneaker packshot">
+        <div class="cap">"Professional product photography of a premium running sneaker, studio lighting, ultra-detailed, luxury advertising style, masterpiece."</div>
+      </div>
+      <div class="half">
+        <div class="tag a">After</div>
+        <img src="assets/after-product-shot.jpg" alt="Frame-grab style sneaker action insert">
+        <div class="cap">The packshot replaced by a frame of the product working: wet concrete, low raking sun, razor-thin focus on the outsole, motion blur trailing the heel. Prompt 15, verbatim.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">What You Get</div>
+    <h2>Four pieces, one standard.</h2>
+    <div class="get" style="margin-top:34px">
+      <div><b>The engine</b><span>A 3,300-word system prompt. Paste it into Claude, ChatGPT, or any capable model with your script and get back a complete prompt bank with a locked visual bible per location.</span></div>
+      <div><b>The 19-page guide</b><span>Why AI images fail (the nine failure modes) and the cinematography rules that fix each one, including the skin-realism module that kills the waxy AI face.</span></div>
+      <div><b>The starter bank</b><span>Twenty finished exemplar prompts across the genres you actually get briefed on: spirits, sports, family, tech, beauty, automotive, food, comedy, and twelve more.</span></div>
+      <div><b>The Review Codes</b><span>Grade any render in seconds (GRAY, FLAT, STAGED, AI-PEOPLE...) and correct only the failing dimension instead of re-rolling from scratch.</span></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="kicker">The Standard</div>
+    <h2>Frames, not pictures.</h2>
+    <p class="lede">Straight out of the starter bank, unretouched.</p>
+    <div class="grid">
+      <figure><img src="assets/hero-morning-unperformed.jpg" alt="Beauty close-up with real skin"><figcaption>Beauty — real skin, held by grain</figcaption></figure>
+      <figure><img src="assets/hero-last-booth.jpg" alt="Bar booth at closing"><figcaption>Nightlife — neon that stays colorful</figcaption></figure>
+      <figure><img src="assets/hero-green-room.jpg" alt="Singer in green room"><figcaption>Music — the moment before the moment</figcaption></figure>
+    </div>
+    <div class="rule-card">Light the story beat, not the entire cast. Direct the primary action; let everyone else be inconveniently human.</div>
+  </section>
+
+  <section class="price" id="pricing">
+    <div class="kicker">Get It</div>
+    <h2>Stop shipping boards that apologize.</h2>
+    <div class="amount">$39</div>
+    <a class="cta" id="buy2" href="#">Buy on Gumroad</a>
+    <div class="cta-note">Instant download: the engine, the guide, the bank, the codes. Yours on every job after this one.</div>
+  </section>
+
+  <footer>
+    THE FRAME GRAB SYSTEM · Built by a working commercial treatment designer in Los Angeles. For use on your own commercial and treatment work.
+  </footer>
+</div>
+
+</body>
+</html>
